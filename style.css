@@ -1,131 +1,380 @@
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0; /* Light background for contrast */
-    margin: 0; /* Remove default margin */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    background-color: #fff;
-    border-radius: 45px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 1000px; /* Increased max-width for larger form */
-    width: 90%; /* Responsive width */
-    height: 500px; /* Increased height for the form */
+html{
+    font-family: "Raleway", serif;
 }
 
-.left {
-    background-color: #007BFF; /* Blue background */
-    color: #fff;
-    padding: 60px; /* Increased padding for better spacing */
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Center text */
-}
-
-.left h1 {
-    margin-bottom: 20px;
-    font-size: 32px; /* Larger font size */
-}
-
-.left p {
-    font-size: 18px; /* Increased font size */
-    line-height: 1.5;
-    margin-bottom: 30px;
-}
-
-.left button {
-    background-color: #fff;
-    color: #007BFF; /* Blue text */
-    border: none;
-    padding: 15px 30px; /* Increased padding */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for effect */
-    font-weight: bold;
-    font-size: 18px; /* Increased font size */
-}
-
-.left button:hover {
-    background-color: #0056b3; /* Dark Blue on hover */
-}
-
-.right {
-    padding: 60px; /* Increased padding */
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.right h2 {
-    margin-bottom: 20px;
-    font-size: 28px; /* Increased font size */
-    color: #333; /* Darker color for contrast */
-}
-
-.right form {
+body{
+    height: 100vh;
     width: 100%;
+    background-color: rgb(250, 251, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.right label {
+.login-container{
+    height: 80vh;
+    width: 80%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.sign-up{
+    /* height: 0;
+    width: 0; */
+   
+  
+   
+   
+    position: absolute;
+    top: 18%;
+    left: 18%;
+   
+    
+   
+}
+
+.traingle{
+    position: absolute;
+    border-left: 660px solid #008CBA;
+    /* border-right: 25px solid transparent; */
+    border-bottom: 482px solid transparent;
+    
+    
+}
+
+.sign-in{
+    position: absolute;
+    right: 15%;
+    bottom: 25%;
+}
+
+label{
     display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(88, 87, 87);
     margin-bottom: 5px;
-    font-weight: bold; /* Bold labels */
-    color: #555; /* Darker color for labels */
+    
+    font-variant: small-caps;
 }
 
-.right input[type="text"],
-.right input[type="password"] {
-    width: 100%;
-    padding: 15px; /* Increased padding */
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.right input[type="text"]:focus,
-.right input[type="password"]:focus {
-    border-color: #007BFF; /* Blue border on focus */
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.right input[type="submit"] {
-    background-color: #007BFF; /* Blue background */
+ a{
     color: white;
-    border: none;
-    padding: 15px; /* Increased padding */
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+ .anchor:link {
+   
+    display: inline-block;
+    font-variant: small-caps;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid white;
+    font-size: 18px;
     font-weight: bold;
-    font-size: 18px; /* Increased font size */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.right input[type="submit"]:hover {
-    background-color: #0056b3; /* Dark Blue on hover */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px); /* Slight lift effect on hover */
-}
-
-.required {
+    margin: 10px;
+    
+  }
+  
+   .anchor:link:visited {
+    color: black;
+  }
+  
+   .anchor:link:hover {
+    color: black;
+    border: 1px solid black;
+  }
+  
+   .anchor:link:active {
     color: red;
+  }
+
+h1{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 15px;
+    font-variant: small-caps;
+    position: relative;
+    
+  
+}
+/* h1 {
+    text-align: center;
+    color: #fff;
     font-weight: bold;
-    margin-left: 5px;
+    font-size: 96px;
+    text-shadow: -1px 2px 3px rgba(236, 247, 76, 0.2);
+    position: relative;
+  } */
+
+  h1::before {
+    content: "Welcome!";
+  
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    
+    width: 100%;
+    overflow: hidden;
+    animation: textreveal 5s linear infinite;
+    color: black;
+   
+  }
+
+  @keyframes textreveal {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+p{
+    color: white;   
+    font-size: 17px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+
+h2{
+    font-size: 25px;
+    color: rgb(88, 87, 87);
+    margin-bottom: 20px;
+}
+
+.mb-3{
+    margin-bottom: 15px;
+}
+
+input{
+  width: 350px;
+  padding: 10px 15px;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  border-radius: 100px;
+  font-family: "Raleway", serif;
+}
+
+::placeholder {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: rgb(88, 87, 87);
+  font-family: "Raleway", serif;
+  font-variant: small-caps;
+}
+
+button{
+    width: 100%;
+    color: #008CBA;
+    font-variant: small-caps;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid #008CBA;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(250, 251, 253);
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: all 0.5s linear;
+
+    
+}
+
+button:hover{
+    width: 50%;
+    border: 1px solid  rgb(88, 87, 87); 
+    color:rgb(88, 87, 87) ;
+
+}
+
+
+.Forgot{
+    color:  #008CBA;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 18px;
+   
+}
+
+
+@media (width <= 1020px){
+  .traingle{
+    position: absolute;
+    border-left: 398px solid #008CBA;
+    /* border-right: 25px solid transparent; */
+    border-bottom: 482px solid transparent;
+    
+    
+}
+
+}
+
+
+@media (width <= 890px){
+  h1{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  label{
+    font-size: 15px;
+
+  }
+  ::placeholder{
+    font-size: 15px;
+
+  }
+  input{
+    width: 80%;
+  }
+  button{
+    width: 80%;
+
+  }
+  .Forgot{
+    font-size: 17px;
+
+  }
+}
+
+@media (width <=860px){
+  .traingle{
+    position: absolute;
+    border-left: 320px solid #008CBA;
+    /* border-right: 25px solid transparent; */
+    border-bottom: 482px solid transparent;
+    
+    
+}
+
+}
+
+@media (width <=640px){
+  .traingle {
+    position: absolute;
+    border-left: 490px solid #008CBA;
+    /* border-right: 25px solid transparent; */
+    border-bottom: 286px solid transparent;
+}
+
+ 
+  .sign-in{
+    position: absolute;
+   top: 40%;
+    bottom: 25%;
+}
+  
+ 
+
+}
+
+
+@media (width<=615px){
+  .traingle {
+    position: absolute;
+    border-left: 456px solid #008CBA;
+    /* border-right: 25px solid transparent; */
+    border-bottom: 286px solid transparent;
+} 
+
+h1{
+  font-size: 25px;
+}
+
+p{
+  font-size: 12px;
+}
+
+label{
+  font-size: 12px;
+
+}
+::placeholder{
+  font-size: 12px;
+
+}
+input{
+  width: 70%;
+}
+button{
+  width: 70%;
+
+}
+.Forgot{
+  font-size: 15px;
+
+}
+
+.anchor:link{
+  font-size: 13px;
+}
+}
+
+
+@media (width<=570px){
+  .traingle {
+    position: absolute;
+    border-left: 356px solid #008CBA;
+    /* border-right: 25px solid transparent; */
+    border-bottom: 381px solid transparent;
+} 
+
+ h2{
+  font-size: 20px;
+ }
+ .sign-in{
+  position: absolute;
+ top: 40%;
+  left: 50%;
+}
+
+input{
+  width: 100%;
+}
+
+button{
+  font-size: 15px;
+}
+
+
+}
+
+@media (width<=470px){
+  .traingle {
+    position: absolute;
+    border-left: 281px solid #008CBA;
+    /* border-right: 25px solid transparent; */
+    border-bottom: 411px solid transparent;
+} 
+
+button{
+  font-size: 12px;
+}
+
+}
+
+@media (width<=420px){
+     input{
+      width: 100%;
+     }
 }
