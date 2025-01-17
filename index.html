@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Inconsolata:wght@200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="left">
-            <h1>Welcome Back!</h1>
-            <p>Please login to your account.</p>
-            <button>Sign Up</button>
-        </div>
-        <div class="right">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Username <span class="required">*</span></label>
-               <input type="text" id="username" name="username" required>
+    <div class="login-container">
+        <div class="traingle"></div>
+       
+        <div class="sign-up">
+            <h1>Welcome!</h1>
+            <p>Create your account. <br> For Free!</p>
+            <a href="#" target="_blank" class="anchor">Sign Up</a>
 
-               <label for="password">Password <span class="required">*</span></label>
-               <input type="password" id="password" name="password" required>
-                <input type="submit" value="Login">
-            </form>
         </div>
+        <div class="sign-in">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <label for="username">Username/Email address</label>
+                    <input type="text" name="Username" id="Username" required placeholder="Username or Email" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label for="Password">Password</label>
+                    <input type="Password" name="Password" id="Password" required placeholder="Password" autocomplete="off">
+                </div>
+
+                <div>
+                    <button type="submit" class="button">Sign In</button>
+                </div>
+
+                <a href="#" target="_blank" class="Forgot">Forgot Password?</a>
+
+            </form>
+            
+
+        </div>
+
     </div>
+
+    
 </body>
 </html>
